@@ -8,8 +8,6 @@
 </head>
 <body>
     <?php include 'header.php';?>
-    <h1>Welcome to the front page!</h1>
-    <p><a>Here</a> you can see all the advertisements that are currently active.</p>
-    <p><a>Here</a> is a list of all our registered users:</p>
+    <h1>Welcome to the users page!</h1>
 </body>
 </html>
