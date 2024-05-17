@@ -11,7 +11,6 @@ RewriteRule ^advertisements$ /?action=advertisements [L]
 RewriteRule ^home$ /?action=home  [L]
 
 #restrict the user from seeing folder files
-RedirectMatch 403 ^/CSS/[a-z0-9.]*?$
-RedirectMatch 403 ^/models/[a-z0-9.]*?$
-RedirectMatch 403 ^/services/[a-z0-9.]*?$
-RedirectMatch 403 ^/view/[a-z0-9.]*?$
+RedirectMatch 403 ^/models/[a-zA-Z0-9.]*?$
+RedirectMatch 403 ^/services/[a-zA-Z0-9.]*?$
+RedirectMatch 403 ^/view/[a-zA-Z0-9.]*?$
