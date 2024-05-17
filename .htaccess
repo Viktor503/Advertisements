@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^users$ /users\.php  [L]
+
+RewriteEngine On
+RewriteRule ^advertisements$ /advertisements\.php  [L]
+
+RewriteEngine On
+RewriteRule ^home$ /home\.php  [L]
