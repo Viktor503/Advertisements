@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertisements</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    <h1>Welcome to the front page!</h1>
-    <p><a>Here</a> you can see all the advertisements that are currently active.</p>
-    <p><a>Here</a> is a list of all our registered users:</p>
-</body>
-</html>
+<?php
+    require_once('model/database.php');
+    require_once('model/advertisements_db.php');
+    require_once('model/users_db.php');
+
+    $action = filter_input(INPUT_POST,'action', FILTER_SANITIZE_STRING);
+    if (empty($action)) {
+        $action = filter_input(INPUT_GET,'action', FILTER_SANITIZE_STRING);
+        if (empty($action)) {
+            $action = 'home';
+        }
+    }
+    switch ($action) {
+        case 'home':
+            include('view/home.php');
+            break;
+        case 'users':
+            $users = get_all();
+            include('view/users.php');
+            break;
+        case 'advertisements':
+            $advertisements = get_all();
+            include('view/advertisements.php');
+            break;
+        }
