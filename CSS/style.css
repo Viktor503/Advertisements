@@ -16,3 +16,31 @@ header{
     color: #fff;
     text-decoration: none;
 }
+table{
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+table th{
+    background-color: #53130a;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+tr{
+    padding: 10px;
+    color: #fff;
+    border: white 1px solid;
+}
+td{
+    padding: 10px;
+    border: white 1px solid;
+}
+tr:nth-child(odd){
+    
+    background-color: #53380A;
+}
+tr:nth-child(even){
+
+    background-color: #530A26;
+}

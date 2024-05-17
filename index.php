@@ -15,11 +15,11 @@
             include('view/home.php');
             break;
         case 'users':
-            $users = get_all();
+            $users = get_all_users();
             include('view/users.php');
             break;
         case 'advertisements':
-            $advertisements = get_all();
+            $advertisements = get_all_advertisements();
             include('view/advertisements.php');
             break;
         }

@@ -1,9 +1,9 @@
 <header>
         <nav>
-            <ul>
-                <li class="navbutton" onclick="goToWebsite('index.php')"><p>Home</p></li>
-                <li class="navbutton" onclick="goToWebsite('users.php')" ><p>Users</p></li>
-                <li class="navbutton" onclick="goToWebsite('advertisements.php')" ><p>advertisements</p></li>
-            </ul>
+        <ul class="menuItems">
+            <li class="navbutton"><a href="home">Home</a></li>
+            <li class="navbutton"><a href="users">Users</a></li>
+            <li class="navbutton"><a href="advertisements">advertisements</a></li>
+        </ul>
         </nav>
 </header>

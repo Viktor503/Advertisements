@@ -1,8 +1,8 @@
 RewriteEngine On
-RewriteRule ^users$ /users\.php  [L]
+RewriteRule ^users$ /?action=users  [L]
 
 RewriteEngine On
-RewriteRule ^advertisements$ /advertisements\.php  [L]
+RewriteRule ^advertisements$ /?action=advertisements [L]
 
 RewriteEngine On
-RewriteRule ^home$ /home\.php  [L]
+RewriteRule ^home$ /?action=home  [L]
