@@ -23,4 +23,3 @@
             include('view/advertisements.php');
             break;
         }
-
