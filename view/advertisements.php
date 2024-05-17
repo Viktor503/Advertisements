@@ -15,16 +15,20 @@
         <th>User</th>
         <th>Title</th>
     </tr>
+    <!-- here we check if there are any advertisements in the database -->
     <?php if(empty($advertisements)){ ?>
     <tr>
+        <!-- if there are no advertisements we display a message -->
         <td colspan="3">No advertisements found</td>
     </tr>
     <?php }else{ ?>
+        <!-- if there are advertisements we loop through them and display them in a table -->
         <?php foreach($advertisements as $advertisement) : ?>
         <tr>
-            <td><?php echo $advertisement['id']?></td>
-            <td><?php echo $advertisement['username']?></td>
-            <td><?php echo $advertisement['title']?></td>
+            <!-- geting variables with class methods -->
+            <td><?php echo $advertisement->getId()?></td>
+            <td><?php echo $advertisement->getUsername()?></td>
+            <td><?php echo $advertisement->getTitle()?></td>
         </tr>
         <?php endforeach; ?>
     <?php } ?>

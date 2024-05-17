@@ -1,8 +1,17 @@
 RewriteEngine On
+#here we rewrite the urls to work with our action parameter
+
+#for example here /users will redirect us to /?action=users
 RewriteRule ^users$ /?action=users  [L]
 
-RewriteEngine On
+#here /advertisements will redirect us to /?action=advertisements
 RewriteRule ^advertisements$ /?action=advertisements [L]
 
-RewriteEngine On
+#here /home will redirect us to /?action=home
 RewriteRule ^home$ /?action=home  [L]
+
+#restrict the user from seeing folder files
+RedirectMatch 403 ^/CSS/?$
+RedirectMatch 403 ^/models/?$
+RedirectMatch 403 ^/services/?$
+RedirectMatch 403 ^/view/?$

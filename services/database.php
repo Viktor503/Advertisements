@@ -1,4 +1,5 @@
 <?php
+    //connect to local database
     $dsn = "mysql:host=localhost;dbname=advertisements";
     $username = "root";
     try{

@@ -14,15 +14,19 @@
         <th>Id</th>
         <th>Username</th>
     </tr>
+    <!-- here we check if there are any users in the database -->
     <?php if(empty($users)){ ?>
     <tr>
+        <!-- if there are no users we display a message -->
         <td colspan="3">No users found</td>
     </tr>
     <?php }else{ ?>
+        <!-- if there are users we loop through them and display them in a table -->
         <?php foreach($users as $user) : ?>
         <tr>
-            <td><?php echo $user['id']?></td>
-            <td><?php echo $user['name']?></td>
+            <!-- geting variables with class methods -->
+            <td><?php echo $user->getId()?></td>
+            <td><?php echo $user->getName()?></td>
         </tr>
         <?php endforeach; ?>
     <?php } ?>
